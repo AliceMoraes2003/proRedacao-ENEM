@@ -1,0 +1,95 @@
+/* estrutura do corpo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    padding: 12px 12px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-height: 40px;
+    max-width: 100%;
+    margin-left: 10px;
+}
+
+.header img:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.logo-container h2 {
+    color: #fff;
+    margin: 0;
+    margin-left: 20px;
+}
+
+/* Adicione estilos aos links da barra de navegação */
+.navbar a {
+    display: flex;
+    color: #f2f2f2;
+    margin: 0;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+/* Altere a cor do link ao passar o mouse sobre ele */
+.navbar a:hover {
+    background-color: #45a049;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Adicione estilos aos botões e torná-los responsivos */
+.button-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #45a049;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-container button:hover {
+    background-color: #4CAF50;
+    transform: scale(1.05);
+}
+
+/* rodapé */
+footer p {
+    text-align: center;
+}

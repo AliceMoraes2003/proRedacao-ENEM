@@ -1,0 +1,130 @@
+/* Estilo global do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo da barra de navegação */
+.header {
+    background-color: #333;
+    padding: 12px 12px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-height: 40px;
+    max-width: 100%;
+    margin-left: 20px;
+}
+
+.header img:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.logo-container h2 {
+    color: #fff;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.redacao-wrapper {
+    position: relative;
+}
+
+/* Botão de voltar fixo na página */
+#voltarParaTela {
+    position: fixed;
+    top: 80px; /* Ajuste a posição conforme necessário (60px é apenas um exemplo) */
+    left: 10px; /* Ajuste a posição conforme necessário */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 1001; /* Z-index ajustado para garantir que fique acima da barra fixa */
+}
+
+#voltarParaTela:hover {
+    transform: scale(1.08);
+}
+
+/* Estilo do conteúdo da redação */
+.redacao-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    max-width: 800px;
+    margin: 80px auto;
+    margin-top: 80px;
+}
+
+.redacao-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.redacao-content p {
+    margin-bottom: 20px;
+}
+
+.redacao-content textarea {
+    background-color: #fff;
+    padding: 50px; /* Ajuste o preenchimento conforme necessário */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* tamanho máximo */
+    max-height: 800px; /* altura máxima */
+    margin: 10px auto; /* Ajuste a margem conforme necessário */
+    margin-top: 20px;
+    display: block;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Evita que o preenchimento e a borda aumentem a largura total */
+    resize: none; /* Impede o redimensionamento do usuário */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical, se necessário */
+}
+
+.redacao-content button {
+    padding: 10px 20px;
+    background-color: #45a049;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: block; /* Alterado para ser um bloco */
+    margin: 0 auto; /* Adicionado para centralizar horizontalmente */
+    margin-top: 20px;
+}
+
+.redacao-content button:hover {
+    background-color: #45a049;
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+/* Rodapé */
+footer p{
+    text-align: center;
+}

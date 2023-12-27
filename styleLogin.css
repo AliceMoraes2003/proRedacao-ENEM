@@ -1,0 +1,157 @@
+/* Estilo global do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo da barra de navegação */
+.header {
+    background-color: #333;
+    padding: 12px 12px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-height: 40px;
+    max-width: 100%;
+    margin-left: 20px;
+}
+
+.header img:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.logo-container h2 {
+    color: #fff;
+    margin: 0;
+    margin-left: 20px;
+}
+
+/* Estilo do contêiner de login/cadastro */
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%; /* Ajustado para ocupar 70% da largura da tela */
+    max-width: 400px; /* Adicionado para definir uma largura máxima */
+    margin: 100px auto; /* Centralizado vertical e horizontalmente */
+}
+
+/* Estilo dos botões de alternância entre login e cadastro */
+.login-options {
+    display: flex;
+    flex-direction: column; /* Modificado para uma coluna em telas pequenas */
+    align-items: center; /* Centralizado verticalmente */
+    margin-bottom: 16px; /* Adicionado espaço inferior entre botões e formulários */
+}
+
+/* Estilo dos formulários */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo das etiquetas de formulário */
+label {
+    margin-bottom: 8px;
+}
+
+/* Estilo dos campos de entrada */
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+/* Estilo dos botões padrão */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Efeito de hover nos botões */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo dos grupos de entrada */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo das etiquetas dentro dos grupos de entrada */
+.input-group label {
+    margin-bottom: 8px;
+}
+
+/* Estilo do formulário de login (inicialmente visível) */
+#loginForm {
+    display: block;
+}
+
+/* Estilo do formulário de cadastro (inicialmente oculto) */
+#cadastroForm {
+    display: none;
+}
+
+/* Estilo do botão de login (inicialmente oculto) */
+#loginButton {
+    display: none;
+}
+
+/* Estilo do botão de cadastro (inicialmente visível) */
+#cadastroButton {
+    display: block;
+}
+
+/* Estilo dos botões de login e cadastro */
+button#loginButton,
+button#cadastroButton {
+    background-color: #3498db; /* Cor para os botões Cadastro e Login */
+    color: white;
+}
+
+/* Efeito de hover nos botões de login e cadastro */
+button#loginButton:hover,
+button#cadastroButton:hover {
+    background-color: #2980b9; /* Cor ao passar o mouse para os botões Cadastro e Login */
+}
+
+/* Estilo da mensagem de sucesso (inicialmente oculta) */
+#successMessage {
+    margin-top: 50px;
+    text-align: center;
+    display: none; /* Adicione esta linha para ocultar por padrão */
+}
+
+/* Estilo da mensagem de sucesso dentro do formulário de cadastro (inicialmente visível) */
+#cadastroForm #successMessage {
+    display: block; /* Adicione esta linha para exibir apenas na tela de cadastro */
+}
+
+/* Rodapé */
+footer p {
+    text-align: center;
+}

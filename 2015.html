@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleRedacao.css">
+    <title>ProRedação ENEM</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/5024/5024163.png" alt="Logo" href="#" onclick="window.location.href='telaEstudante.html'">
+            <h2>Pro Redação ENEM</h2>
+        </div>
+        <div class="navbar">
+            <a href="#" onclick="window.location.href='TelaRedacoesEnviadas.html'">Redações Enviadas</a>
+        </div>
+    </div>
+
+    <div class="redacao-wrapper">
+        <button id="voltarParaEstudante">Voltar para a Tela do Estudante</button>
+        
+        <div class="redacao-container">
+            <h1 style="text-align: center;">ENEM 2015: "A persistência da violência contra a mulher na sociedade brasileira"</h1>
+            <p>Sobre o número de linhas:</p>
+            <ol>
+                <li>A redação deve ser escrita com um máximo de 30 linhas.</li>
+                <li>A redação que apresentar cópia dos textos de Proposta de Redação terá o número de linhas copiadas desconsiderado para a contagem de linhas.</li>
+            </ol>
+
+            <p>Será atribuída nota zero se:</p>
+            <ol>
+                <li>Tiver até 07 (sete) linhas escritas, sendo considerada "texto insuficiente"</li>
+                <li>Fugir ao tema ou não atender ao tipo dissertativo argumentativo</li>
+                <li>Apresentar parte do texto deliberadamente desconectada do tema proposto</li>
+            </ol>
+            <textarea id="redacao" name="redacao" rows="10" placeholder="Digite sua redação aqui..." style="font-family: Arial, Helvetica, sans-serif;"></textarea>
+
+            <button id="enviarRedacao">Enviar Redação</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>UNINASSAU, Graças - Derby</p>
+        <p>Alice Moraes (01565125), Ícaro Queiroz (01532766) e Wellyson Felix (01533302)</p>
+    </footer>
+
+    <script src="mainRedacao.js"></script>
+</body>
+</html>

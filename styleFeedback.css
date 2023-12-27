@@ -1,0 +1,92 @@
+/* estrutura do corpo geral */
+body { 
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    padding: 12px 12px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-height: 40px;
+    max-width: 100%;
+    margin-left: 10px;
+}
+
+.header img:hover {
+    transform: scale(1.08); /* Efeito de escala ao passar o mouse */
+    cursor: pointer;
+}
+
+.logo-container h2 {
+    color: #fff;
+    margin: 0;
+    margin-left: 20px;
+}
+
+/* Botão de voltar fixo na página */
+#voltarParaTela {
+    position: fixed;
+    top: 80px; /* Ajuste a posição conforme necessário (60px é apenas um exemplo) */
+    left: 10px; /* Ajuste a posição conforme necessário */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 1001; /* Z-index ajustado para garantir que fique acima da barra fixa */
+}
+
+#voltarParaTela:hover {
+    transform: scale(1.08);
+}
+
+/* Estilo do conteúdo do feedback */
+.feedback-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 800px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.feedback-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.feedback-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feedback-content p {
+    margin-bottom: 20px;
+}
+
+/* rodapé */
+footer p {
+    text-align: center;
+}

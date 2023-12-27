@@ -1,0 +1,129 @@
+/* estrutura do corpo geral */
+body { 
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    padding: 12px 12px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-height: 40px;
+    max-width: 100%;
+    margin-left: 10px;
+}
+
+.header img:hover{
+    transform: scale(1.08); /* Efeito de escala ao passar o mouse */
+    cursor: pointer;
+}
+
+.logo-container h2 {
+    color: #fff;
+    margin: 0;
+    margin-left: 20px;
+}
+
+/* Adicione estilos aos links da barra de navegação */
+.navbar a {
+    display: flex;
+    color: #f2f2f2;
+    margin: 0;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+/* Altere a cor do link ao passar o mouse sobre ele */
+.navbar a:hover {
+    background-color: #45a049;
+    color: white;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.redacao-wrapper {
+    position: relative;
+}
+
+/* Botão de voltar fixo na página */
+#voltarParaEstudante {
+    position: fixed;
+    top: 80px; /* Ajuste a posição conforme necessário (60px é apenas um exemplo) */
+    left: 10px; /* Ajuste a posição conforme necessário */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 1001; /* Z-index ajustado para garantir que fique acima da barra fixa */
+}
+
+#voltarParaEstudante:hover {
+    transform: scale(1.08);
+}
+
+/* textarea */
+.redacao-container{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%; 
+    max-width: 800px; 
+    margin: 100px auto; 
+}
+
+.redacao-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.redacao-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* botão de envio */
+#enviarRedacao {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #45a049;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 10px auto;
+}
+
+/* rodapé */
+footer p {
+    text-align: center;
+}

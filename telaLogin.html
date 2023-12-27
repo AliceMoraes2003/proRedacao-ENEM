@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLogin.css">
+    <title>ProRedação ENEM</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/5024/5024163.png" alt="Logo" href="#" onclick="window.location.href='telaLogin.html'">
+            <h2>Pro Redação ENEM</h2>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <h2 style="text-align: center;">Faça seu login ou cadastre-se!</h2>
+
+        <div class="login-options">
+            <button id="loginButton" onclick="mostrarForm('loginForm')">Faça login</button>
+            <button id="cadastroButton" onclick="mostrarForm('cadastroForm')">Faça seu cadastro</button>
+        </div>
+
+        <form id="loginForm">
+            <label for="tipoCadastroLogin">Escolha o tipo de cadastro:</label>
+            <select id="tipoCadastroLogin" name="tipoCadastro">
+                <option value="estudante">Sou estudante</option>
+                <option value="professor">Sou professor</option>
+            </select>
+
+            <div class="input-group">
+                <br>
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu usuário..." required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha...">
+            </div>
+        
+            <button type="button" onclick="realizarLogin()">Entrar</button>
+        </form>
+        
+        <form id="cadastroForm">
+            <label for="tipoCadastroCadastro">Escolha o tipo de cadastro:</label>
+            <select id="tipoCadastroCadastro" name="tipoCadastro">
+                <option value="estudante">Sou estudante</option>
+                <option value="professor">Sou professor</option>
+            </select>
+        
+            <div class="input-group">
+                <br>
+                <label for="cadastroUsername">Usuário:</label>
+                <input type="text" id="cadastroUsername" name="cadastroUsername" placeholder="Apenas números e letras" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="cadastroPassword">Senha:</label>
+                <input type="password" id="cadastroPassword" name="cadastroPassword" placeholder="No mínimo 6 caracteres" required>
+            </div>
+        
+            <button type="button" onclick="realizarCadastro()">Cadastrar</button>
+        </form>
+
+        <div id="successMessage" class="success-message" style="display: none;">
+            <h2>Cadastro realizado com sucesso!</h2>
+            <p>Agora você pode acessar a nossa plataforma e aproveitar tudo o que tem de melhor nela!</p>
+        </div>    
+
+        <p id="loginResult"></p>
+
+    </div>
+
+    <footer>
+        <div>
+            <p>UNINASSAU, Graças - Derby</p>
+            <p>Alice Moraes (01565125), Ícaro Queiroz (01532766) e Wellyson Felix (01533302)</p>
+        </div>
+    </footer>
+
+    <script src="mainLogin.js"></script>
+</body>
+</html>
